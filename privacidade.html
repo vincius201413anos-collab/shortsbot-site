@@ -8,42 +8,58 @@
   :root { --fg: #1d1d1f; --bg: #ffffff; --muted: #555; --link: #0b57d0; }
   @media (prefers-color-scheme: dark) { :root { --fg: #ececec; --bg: #16181c; --muted: #a8a8a8; --link: #8ab4f8; } }
   body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: var(--fg); background: var(--bg);
-         max-width: 720px; margin: 0 auto; padding: 32px 16px; line-height: 1.6; }
+         max-width: 760px; margin: 0 auto; padding: 32px 16px; line-height: 1.6; }
   a { color: var(--link); }
+  h2 { margin-top: 28px; }
   footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
-<h1>Política de Privacidade</h1>
-<p><em>Última atualização: 18 de outubro de 2026</em></p>
+<h1>Política de Privacidade / Privacy Policy</h1>
+<p><em>Última atualização / Last updated: 18 de outubro de 2026</em></p>
 
-<p>O ShortsBot é uma ferramenta de uso pessoal. Ela é usada apenas pelo próprio dono, para publicar vídeos
-no canal dele.</p>
+<p>O ShortsBot é uma ferramenta pessoal, usada apenas pelo próprio dono para publicar vídeos originais no seu
+canal "Curioso ao Máximo". <strong>O ShortsBot usa os YouTube API Services</strong> (YouTube Data API v3 e
+YouTube Analytics API).</p>
 
-<h2>Dados acessados</h2>
-<p>Com a autorização do dono da conta, o ShortsBot usa as APIs oficiais do YouTube e do TikTok para:</p>
+<h2>YouTube API Services</h2>
 <ul>
-  <li>enviar vídeos para o canal autorizado;</li>
-  <li>ler informações públicas do canal e dos vídeos em alta, para escolher temas e acompanhar resultados.</li>
+  <li>Ao usar o ShortsBot, o usuário concorda com os
+    <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a>.</li>
+  <li>Os dados obtidos pelos YouTube API Services também são tratados conforme a
+    <a href="http://www.google.com/policies/privacy">Política de Privacidade do Google</a>.</li>
 </ul>
-<p>O ShortsBot não acessa e-mails, contatos, mensagens nem dados de outras pessoas.</p>
 
-<h2>Armazenamento</h2>
-<p>As autorizações (tokens) ficam guardadas apenas no servidor privado do dono e servem só para essas funções.
-Nenhum dado é vendido, compartilhado ou enviado a terceiros, exceto às próprias plataformas (YouTube e TikTok)
-no momento da publicação.</p>
+<h2>Dados acessados, coletados e armazenados</h2>
+<p>Com a autorização (OAuth 2.0) da conta Google do dono, o ShortsBot acessa somente:</p>
+<ul>
+  <li><strong>Envio de vídeos</strong> (escopo youtube.upload): publica os vídeos produzidos no canal autorizado.</li>
+  <li><strong>Leitura do próprio canal</strong> (youtube.readonly): nome do canal, estatísticas dos próprios vídeos
+    e a lista pública de vídeos em alta no Brasil.</li>
+  <li><strong>Estatísticas do próprio canal</strong> (yt-analytics.readonly): views, retenção, likes e inscritos
+    ganhos dos vídeos do próprio canal.</li>
+</ul>
+<p>O ShortsBot não acessa dados de outros usuários, não coleta informações pessoais de espectadores, não usa
+cookies nem rastreadores e não exibe anúncios.</p>
 
-<h2>Uso de dados das APIs do Google</h2>
-<p>O uso e a transferência de informações recebidas das APIs do Google seguem a
-<a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos
-Serviços de API do Google</a>, incluindo os requisitos de uso limitado.</p>
+<h2>Como os dados são usados e compartilhados</h2>
+<p>As estatísticas são usadas apenas para entender quais formatos de vídeo funcionam melhor no próprio canal.
+Os tokens de autorização e as estatísticas ficam guardados somente no servidor privado do dono. Nenhum dado é
+vendido nem compartilhado com terceiros, exceto o envio dos vídeos ao próprio YouTube.</p>
 
-<h2>Como revogar o acesso</h2>
-<p>A autorização pode ser removida a qualquer momento em
-<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (Google) e nas
-configurações de segurança do TikTok.</p>
+<h2>Retenção, exclusão e revogação</h2>
+<ul>
+  <li>As estatísticas armazenadas são atualizadas a cada coleta e excluídas em até 30 dias depois que a
+    autorização é revogada ou quando o dono pede a exclusão.</li>
+  <li>O acesso pode ser revogado a qualquer momento na página de permissões da Conta Google:
+    <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>.</li>
+  <li>Para pedir a exclusão dos dados armazenados, abra uma solicitação em
+    <a href="https://github.com/vincius201413anos-collab/shortsbot-site/issues">github.com/vincius201413anos-collab/shortsbot-site/issues</a>.</li>
+</ul>
 
-<footer><a href="index.html">ShortsBot</a> · Contato:
-<a href="https://github.com/vincius201413anos-collab">github.com/vincius201413anos-collab</a></footer>
+<h2>Contato</h2>
+<p><a href="https://github.com/vincius201413anos-collab/shortsbot-site/issues">github.com/vincius201413anos-collab/shortsbot-site/issues</a></p>
+
+<footer><a href="index.html">ShortsBot</a> · <a href="termos.html">Termos de Serviço</a></footer>
 </body>
 </html>
